@@ -1,0 +1,9 @@
+---
+layout: post
+title: Distributed version control (DVCS)
+date: 2012-03-03 16:46
+author: ayvazyan
+comments: true
+categories: [dvcs, git, mercurial, Source Control, tfs]
+---
+<p>For a long while I was interested to try out some DVCS. The problems caused me to not do that was really simple – which one to choose Mercurial or git?</p>  <p>I read some technical articles and came to a conclusion that Mercurial has better merge capabilities. Unfortunately I don’t have links to these articles (I read them several months ago)</p>  <p>But what I like about git is that it has a huge community and that’s why there are many neat tools for it. For example there is a <a href="https://github.com/spraints/git-tfs">two-way bridge between TFS and Git</a>.</p>  <p>Today I came over <a href="http://www.ericsink.com/entries/hg_denzel.html">Mercurial, Subversion, and Wesley Snipes</a> article and Eric Sink says there:</p>  <blockquote>   <p>But if I were choosing a DVCS as a regular user, I would choose Mercurial. I've used it some, and found it to be incredibly pleasant.&#160; It seems like the DVCS that got everything just about right.</p> </blockquote>  <p>But in my particular case of .NET development using VS 2010… Mercurial isn’t seem that simple to use. Here’s some information on <a href="http://stackoverflow.com/questions/2331636/real-world-use-of-mercurial-with-a-team-foundation-server">Real-world use of Mercurial with a Team Foundation Server</a>.</p>  <p>On the other hand there is a plug-in that <a href="http://visualstudiogallery.msdn.microsoft.com/63a7e40d-4d71-4fbb-a23b-d262124b8f4c/">integrates git with Visual Studio</a> and a <a href="https://github.com/spraints/git-tfs">two-way bridge between TFS and Git</a>. So it seems git wins a competition for me… at least for now.</p>

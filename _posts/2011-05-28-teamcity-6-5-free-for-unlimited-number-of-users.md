@@ -1,0 +1,9 @@
+---
+layout: post
+title: "TeamCity 6.5: Free for unlimited number of users!"
+date: 2011-05-28 12:28
+author: ayvazyan
+comments: true
+categories: [.NET, Continuous Integration, I recommend]
+---
+<p>Today I found that JetBrains released new version of the TeamCity. And that the most exciting - <strong>now it’s free for unlimited number of users</strong>! </p>  <p>So don’t hesitate to read <a href="http://www.jetbrains.com/teamcity/whatsnew/index.html">What's New</a> and <a href="http://www.jetbrains.com/teamcity/download/index.html">Download</a> this awesome tool!</p><!--more--><p>TeamCity offers the following features to the <strong>.NET developers</strong>:</p>  <ul>   <li>Build and test any <strong>Visual Studio solution</strong>, as well as any other project using <strong>MSBuild</strong>or <strong>NAnt</strong> build scripts; </li>    <li>Run tests under any of the <strong>.NET testing frameworks</strong> out of the box, including:<strong>NUnit</strong>, <strong>MSTest</strong>, <strong>MSpec</strong>, <strong>xUnit</strong> and all <strong>Gallio</strong> - based frameworks. In many cases in order to make TeamCity discover tests in your build, you don't need to make any changes in the build scripts, TeamCity will report tests automatically; </li>    <li>Choose any of the <strong>coverage engines</strong>currently available for .NET: <strong>NCover</strong>,<strong>PartCover</strong> or <strong>JetBrains dotCover</strong>. Again, you do not have to modify your build scripts, just turn coverage on in the TeamCity; </li>    <li>Work with TeamCity without leaving <strong>Visual Studio</strong>. Receive build notifications and browse build results in your IDE: all with navigation to the source code, and with code coverage highlighting if you use dotCover. </li> </ul>
