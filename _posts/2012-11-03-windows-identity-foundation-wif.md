@@ -19,7 +19,7 @@ WIF allows to make Claims <strong>Transformation</strong>. So the application wi
 Claims-based <strong>Authorization</strong> is a piece of cake. Again you deal with domain specific terms. Here's simple example:
 
 ```csharp
-[ClaimsPrincipalPermission(SecurityAction.Demand, Operation = &quot;Add&quot;, Resource = &quot;Customer&quot;)]
+[ClaimsPrincipalPermission(SecurityAction.Demand, Operation = "Add", Resource = "Customer")]
 public void AddCustomer() { ... }
 ```
 
@@ -32,9 +32,9 @@ public override bool CheckAccess(AuthorizationContext context)
 	// please note that we deal with arrays here, so we can use more complex expressions in describing our business logic requirements.
 	var resource = context.Resource.First().Value;
 	var action = context.Action.First().Value;
-	if (action == &quot;Add&quot; &amp;&amp; resource == &quot;Customer&quot;)
+	if (action == "Add" && resource == "Customer")
 	{
-		return context.Principal.HasClaim(&quot;http://myclaims/someclaim&quot;);
+		return context.Principal.HasClaim("http://myclaims/someclaim");
 	}
 	return false;
 }
