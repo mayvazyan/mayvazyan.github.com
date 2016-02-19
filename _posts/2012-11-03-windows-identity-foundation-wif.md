@@ -18,15 +18,15 @@ WIF allows to make Claims <strong>Transformation</strong>. So the application wi
 
 Claims-based <strong>Authorization</strong> is a piece of cake. Again you deal with domain specific terms. Here's simple example:
 
-[csharp]
+```csharp
 [ClaimsPrincipalPermission(SecurityAction.Demand, Operation = &quot;Add&quot;, Resource = &quot;Customer&quot;)]
 public void AddCustomer() { ... }
-[/csharp]
+```
 
 As you can see your business logic says - this is "Add" operation and "Customer" is resource.
 And we have a single method to implement authorization logic:
 
-[csharp]
+```csharp
 public override bool CheckAccess(AuthorizationContext context)
 {
 	// please note that we deal with arrays here, so we can use more complex expressions in describing our business logic requirements.
@@ -38,7 +38,7 @@ public override bool CheckAccess(AuthorizationContext context)
 	}
 	return false;
 }
-[/csharp]
+```
 
 As you can see on above example we could move authorization logic to the separate assembly or even Web Service.
 It needs to mention that WIF supports Claims caching. For example you can use AppFabric cache to store transformed claims instead of make transformations for each request.
