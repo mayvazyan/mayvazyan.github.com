@@ -20,10 +20,10 @@ Also mage.exe didn't play well with EV Code Signing certificate - mage didn't as
 
 Just in case here's the warning message we were getting:
 
-<blockquote><strong>Windows protected your PC</strong>
+<pre><strong>Windows protected your PC</strong>
 Windows SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk
 
 App: {OurAppName}.exe
 Publisher: Unknown
-</blockquote>
+</pre>
 
