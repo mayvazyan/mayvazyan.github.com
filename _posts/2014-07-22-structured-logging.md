@@ -22,4 +22,7 @@ I did some research and I suppose it’s a way to go for us.
 </ul>
 <i>Technical details</i>
 
-There is a great Structured Logging framework <a href="http://serilog.net/">http://serilog.net/</a>. It allows you to publish logs to different systems. For example you would use <a style="line-height: 1.714285714; font-size: 1rem;" href="https://getseq.net/">Seq</a> web application. Alternative approach is to publish logs to Elastic Search and use Kibana as a Front End. Another interesting option is to push logs into MongoDB. So you 'll be able to do something like  <b style="line-height: 1.714285714; font-size: 1rem;">db.log.find( { customerId: “777”, application: “PaymentGateway” } )</b>
+There is a great Structured Logging framework <a href="http://serilog.net/">http://serilog.net/</a>. It allows you to publish logs to different systems. For example you would use <a style="line-height: 1.714285714; font-size: 1rem;" href="https://getseq.net/">Seq</a> web application. Alternative approach is to publish logs to Elastic Search and use Kibana as a Front End. Another interesting option is to push logs into MongoDB. So you 'll be able to do something like  
+```
+db.log.find( { customerId: “777”, application: “PaymentGateway” } )
+```
