@@ -1320,6 +1320,7 @@ hr {
 		color: #b9301c;
 		border-color: #b9301c; }
 
+.link { width:100px}
 .btn-secondary {
 	border-color: #5ba4e5;
 	color: #5ba4e5; }
@@ -1363,12 +1364,9 @@ hr {
 	color: #FFF; }
 
 nav {
-	display: inline-block;
 	position: relative; }
 
 .navigation {
-	display: inline-block;
-	float: left;
 	position: relative;
 	margin: 0;
 	list-style-type: none; }
@@ -1389,7 +1387,7 @@ nav {
 			opacity: 1; }
 
 .navigation--social {
-	margin-left: 1.5em; }
+	}
 	.navigation--social a {
 		padding: 6px 8px 6px 9px; }
 		.navigation--social a .label {
