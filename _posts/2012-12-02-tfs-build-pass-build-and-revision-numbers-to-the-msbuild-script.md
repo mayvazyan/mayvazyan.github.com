@@ -21,16 +21,17 @@ And replace it by the following text:
 ```
 
 MSBuild script should looks similar to:
-```xml
-&lt;PropertyGroup&gt;
-    &lt;BuildNumber Condition=&quot;'$(BuildNumber)' == ''&quot;&gt;0&lt;/BuildNumber&gt;
-    &lt;RevisionNumber Condition=&quot;'$(RevisionNumber)' == ''&quot;&gt;0&lt;/RevisionNumber&gt;
-  &lt;/PropertyGroup&gt;
 
-  &lt;PropertyGroup&gt;
-    &lt;Major&gt;1&lt;/Major&gt;
-    &lt;Minor&gt;0&lt;/Minor&gt;
-    &lt;Build&gt;$(BuildNumber)&lt;/Build&gt;
-    &lt;Revision&gt;$(RevisionNumber)&lt;/Revision&gt;
-  &lt;/PropertyGroup&gt;
+```xml
+<PropertyGroup>
+    <BuildNumber Condition="'$(BuildNumber)' == ''">0</BuildNumber>
+    <RevisionNumber Condition="'$(RevisionNumber)' == ''">0</RevisionNumber>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Major>1</Major>
+    <Minor>0</Minor>
+    <Build>$(BuildNumber)</Build>
+    <Revision>$(RevisionNumber)</Revision>
+  </PropertyGroup>
 ```
