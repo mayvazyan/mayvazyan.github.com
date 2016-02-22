@@ -37,6 +37,7 @@ The command was:
 
 
 <p>Next steps are obvious “nuget update –self” did the trick.</p>
+
 ```
 nuget update –self
 ```
