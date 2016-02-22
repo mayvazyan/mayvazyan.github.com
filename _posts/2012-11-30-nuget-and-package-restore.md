@@ -22,6 +22,7 @@ NuGet output was:
 ```One or more errors occurred```
 
 The command was:
+
 ```
 "c:\ProjectPath\.nuget\nuget.exe" install "c:\ProjectPath\Source\ProjectName\packages.config" -source "https://nuget.org/api/v2/;http://ourinternalnugetserver.com/nuget" -o "c:\ProjectPath\packages"
 ```
