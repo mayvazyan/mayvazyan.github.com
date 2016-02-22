@@ -8,7 +8,7 @@ categories: [.NET]
 ---
 This would be obvious for someone. Posting it just in case :)
 
-[code lang="csharp"]
+```csharp
     class Program
     {
         private static readonly AutoResetEvent AutoResetEvent = new AutoResetEvent(false);
@@ -28,4 +28,4 @@ This would be obvious for someone. Posting it just in case :)
             AutoResetEvent.Set();
         }
     }
-[/code]
+```
