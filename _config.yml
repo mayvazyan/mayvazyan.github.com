@@ -1,7 +1,7 @@
 # Site settings
 title: Michael Ayvazyan
 description: 'Software Development in a Nutshell'
-url: 'http://meteordev.eastus.cloudapp.azure.com:4000/'
+url: 'http://ayvazyan.net/'
 baseurl: '/'
 google_analytics: 'UA-74010101-1'
 # disqus_shortname: 'your-disqus-name'
