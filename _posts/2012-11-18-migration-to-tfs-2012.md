@@ -12,37 +12,37 @@ During migration I found that some TFS databases are really huge. The answer was
 
 So I had to use <a href="http://visualstudiogallery.msdn.microsoft.com/3d37ce86-05f1-4165-957c-26aaa5ea1010">Test Attachment Cleaner</a> tool to cleanup all those unnecessary data from TFS:
 
-<pre><code>
-&quot;C:\Program Files\Microsoft Team Foundation Server 2010 Power Tools\Test Attachment Cleaner\tcmpt.exe&quot; attachmentcleanup /collection:&quot;http://tfs.example.com:8080/tfs/Collection&quot; /teamproject:&quot;Team Project&quot; /settingsfile:tfscleanup.settings.txt /outputfile:tfscleanup.logs /mode:delete
-</code></pre>
+```
+"C:\Program Files\Microsoft Team Foundation Server 2010 Power Tools\Test Attachment Cleaner\tcmpt.exe" attachmentcleanup /collection:"http://tfs.example.com:8080/tfs/Collection" /teamproject:"Team Project" /settingsfile:tfscleanup.settings.txt /outputfile:tfscleanup.logs /mode:delete
+```
 
 cleanup.settings.txt contained the following settings:
 
-<pre><code class="xml">
-&lt;DeletionCriteria&gt;
-    &lt;TestRun &gt;
-        &lt;AgeInDays OlderThan=&quot;30&quot; /&gt;
-    &lt;/TestRun&gt;
-    &lt;Attachment&gt;
-        &lt;Extensions&gt;
-            &lt;Include value=&quot;tr_&quot;/&gt;
-            &lt;Include value=&quot;tlk&quot;/&gt;
-            &lt;Include value=&quot;dll&quot;/&gt;
-            &lt;Include value=&quot;exe&quot;/&gt;
-            &lt;Include value=&quot;pdb&quot;/&gt;
-            &lt;Include value=&quot;xml&quot;/&gt;
-            &lt;Include value=&quot;coverage&quot;/&gt;
-            &lt;Include value=&quot;config&quot;/&gt;
-            &lt;Include value=&quot;iTrace&quot;/&gt;
-            &lt;Include value=&quot;wmv&quot;/&gt;
-        &lt;/Extensions&gt;
-    &lt;/Attachment&gt;
-    &lt;LinkedBugs&gt;
-        &lt;Exclude state=&quot;Active&quot; /&gt;
-        &lt;Exclude state=&quot;Resolved&quot; /&gt;
-    &lt;/LinkedBugs&gt;
-&lt;/DeletionCriteria&gt;
-</code></pre>
+```xml
+<DeletionCriteria>
+    <TestRun >
+        <AgeInDays OlderThan="30" />
+    </TestRun>
+    <Attachment>
+        <Extensions>
+            <Include value="tr_"/>
+            <Include value="tlk"/>
+            <Include value="dll"/>
+            <Include value="exe"/>
+            <Include value="pdb"/>
+            <Include value="xml"/>
+            <Include value="coverage"/>
+            <Include value="config"/>
+            <Include value="iTrace"/>
+            <Include value="wmv"/>
+        </Extensions>
+    </Attachment>
+    <LinkedBugs>
+        <Exclude state="Active" />
+        <Exclude state="Resolved" />
+    </LinkedBugs>
+</DeletionCriteria>
+```
 
 It did the trick. But I had to shrink database cause test attachments were more than 70% of it's size.
 Next I used script from <a href="http://msdn.microsoft.com/en-us/library/ms177571.aspx" title="DBCC INDEXDEFRAG">MSDN</a> to rebuild all indexes.
