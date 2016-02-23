@@ -13,8 +13,10 @@ The LINQ to XSD technology provides .NET developers with support for typed XML p
 </blockquote> 
 
 Please consider the following code:
+
 ```csharp
 services services = services.Load(@"c:\services.xml");
 string name = services.service.First(x => x.FullTypeName == "xx").Namespace;
 ```
+
 As you probably understand it reads XML underneath. But you deal with LINQ query and don’t worry about parsing XML.
