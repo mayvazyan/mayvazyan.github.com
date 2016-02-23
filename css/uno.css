@@ -998,7 +998,7 @@ blockquote {
 	font-family: "Roboto Slab", serif;
 	font-weight: lighter;
 	font-style: italic;
-	font-size: 1.3em;
+	line-height: 1.7em;
 	}
 	blockquote p:last-child {
 		margin-bottom: 0; }
