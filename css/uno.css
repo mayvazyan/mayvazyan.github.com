@@ -1009,7 +1009,7 @@ ol, ul {
 		margin: 0 0 .2em 0;
 		line-height: 1.6em; }
 	ol ol, ol ul, ul ol, ul ul {
-		margin: .1em 0 .2em 2em; }
+		margin: .5em 0 .5em 2em; }
 
 ol {
 	list-style-type: decimal; }
