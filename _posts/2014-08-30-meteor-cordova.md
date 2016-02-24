@@ -14,8 +14,6 @@ I never mention it on the blog, but I really like <a href="https://www.meteor.co
 </blockquote>
 
 
-
-
 <p>Today I was really excited to read that they are working on <a href="https://github.com/SpaceCapsule/Meteor-cordova/tree/883ecd8d9c11623e725f374d5935d83b0fe2ea0f" title="Meteor Cordova support">Cordova support</a>.
 
 <p>Supported Platform(s)
@@ -25,7 +23,7 @@ I never mention it on the blog, but I really like <a href="https://www.meteor.co
 </ul>
 
 
-<p>
+<!--more-->
 For those who didn't hear about Meteor yet I highly encourage you to look 10 minutes screen cast 
 
 <iframe src="//player.vimeo.com/video/40104996" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
