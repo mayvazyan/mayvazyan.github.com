@@ -30,7 +30,7 @@ SELECT dm_tran_locks.request_session_id,
 FROM sys.dm_tran_locks
 LEFT JOIN sys.partitions ON partitions.hobt_id = dm_tran_locks.resource_associated_entity_id
 LEFT JOIN sys.indexes ON indexes.OBJECT_ID = partitions.OBJECT_ID AND indexes.index_id = partitions.index_id
-WHERE resource_associated_entity_id &gt; 0
+WHERE resource_associated_entity_id > 0
   AND resource_database_id = DB_ID()
 ORDER BY request_session_id, resource_associated_entity_id 
 ```
