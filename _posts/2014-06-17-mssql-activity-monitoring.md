@@ -7,7 +7,7 @@ comments: true
 categories: [MSSQL]
 ---
 At Compellotech we were using Sp_GetWhoIsActive for some time now. It's VERY convenient for activity monitoring. It was created by very bright guy, but it's too heavy sometimes (might impact a production performance).
-So from now on we are using newer query which uses DMO views and does not have any impact on the database.
+So from now on we are using newer query which uses DMO views and does not have any impact on the database performance.
 
 
 ```sql
