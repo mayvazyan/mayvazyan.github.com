@@ -4,7 +4,7 @@ title: SQL Server Managed Backup to Microsoft Azure
 date: 2016-12-22 17:39
 author: michael
 comments: true
-categories: [Open Source]
+categories: [MSSQL]
 ---
 
 Recently we migrated one of our projects to SQL Server 2016. As part of migration we enabled TDE for some databases. 
