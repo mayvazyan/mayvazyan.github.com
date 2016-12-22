@@ -7,7 +7,7 @@ comments: true
 categories: [MSSQL]
 ---
 
-Recently we migrated one of our projects to SQL Server 2016. As part of migration we enabled TDE for some databases. 
+Recently we migrated one of our projects to SQL Server 2016. As part of migration we enabled [TDE](https://msdn.microsoft.com/en-us/library/bb934049.aspx Transparent Data Encryption (TDE)) for some databases. 
 Next step was to configure backups.
 
 On our old SQL Server 2008 we already used to backup to Azure. It's very convenient! 
