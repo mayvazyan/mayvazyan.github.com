@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Group Policies which could affect your Web Application
-date: 2017-04-23 3:30
+date: 2018-03-22 3:30
 author: michael
 comments: true
 categories: [web]
