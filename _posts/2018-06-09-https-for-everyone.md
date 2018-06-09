@@ -11,11 +11,13 @@ It's a year since we are using free certificates on some of our production serve
 So I decided to put together a tiny article highlighing how easy is to make connections to your server secure using [Let's Encrypt](https://letsencrypt.org/):
 
 
-`
-To enable HTTPS on your website, you need to get a certificate (a type of file) from a Certificate Authority (CA). Let’s Encrypt is a CA. In order to get a certificate for your website’s domain from Let’s Encrypt, you have to demonstrate control over the domain. With Let’s Encrypt, you do this using software that uses the ACME protocol, which typically runs on your web host.
+
+`To enable HTTPS on your website, you need to get a certificate (a type of file) from a Certificate Authority (CA). Let’s Encrypt is a CA. In order to get a certificate for your website’s domain from Let’s Encrypt, you have to demonstrate control over the domain. With Let’s Encrypt, you do this using software that uses the ACME protocol, which typically runs on your web host.
 `
 
 More details at https://letsencrypt.org/getting-started/
+
+
 
 
 
