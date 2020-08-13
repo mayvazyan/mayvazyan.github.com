@@ -40,4 +40,4 @@ Then I included Collection Name in the url it was showing "Not Found" error beca
 
 `https://tfs.example.com/tfs/{COLLECTION_NAME}/{COLLECTION_NAME}/_apis/connectionData?connectOptions=1&lastChangeId=-1&lastChangeId64=-1 failed. HTTP Status: NotFound`
 
-More details available at https://github.com/microsoft/azure-pipelines-agent/issues/2565#issuecomment-555448786
+More details available at [https://github.com/microsoft/azure-pipelines-agent/issues/2565#issuecomment-555448786](https://github.com/microsoft/azure-pipelines-agent/issues/2565#issuecomment-555448786)
