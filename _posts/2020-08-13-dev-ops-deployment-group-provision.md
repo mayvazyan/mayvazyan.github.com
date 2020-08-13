@@ -11,7 +11,8 @@ I absolutely love the new "Dev Ops" version (we are running v. 17.M153.5 by the 
 
 But we faced two issues with it, so I'd like to document these here.
 
-## Build Agent registration
+**1. Build Agent registration**
+
 If you need to register Build Agent, you have to include Project Collection Name into the url. 
 
 For example previously it worked fine if you specify `https://tfs.example.com/tfs/`.
@@ -20,7 +21,8 @@ But with Azure Dev Ops you have to include `https://tfs.example.com/tfs/FooBar/`
 
 Otherwise you will get **Client authentication required** error.
 
-## Deployment Agent regionstration
+**2. Deployment Agent regionstration**
+
 If you need to register agent into Deployment Group, you need to modify the PowerShell script a bit. In particular you have to add `--unattended --token {PAT_TOKEN_HERE}`
 
 So instead of the command below which is part of the Registration script in Dev Ops "Deployment Group" screen.
