@@ -48,13 +48,13 @@ Which is what I've got after that
       - (-|%{DATA:user.name}) \[%{HTTPDATE:nginx.access.time}\] "%{DATA:nginx.access.info}"
       %{NUMBER:http.response.status_code:long} %{NUMBER:http.response.body.bytes:long}
       "(-|%{DATA:http.request.referrer})" "(-|%{DATA:user_agent.original})"
-      %{NUMBER:http.request.time:double} %{NUMBER:upstream.request.time:double} %{DATA:pipelined}
+      %{NUMBER:http.request.time:double} (-|%{NUMBER:http.request.upstream.time:double}) %{DATA:http.request.pipelined}
   ...
 ```
 
 - **http.request.time** variable represents full request time, starting when NGINX reads the first byte from the client and ending when NGINX sends the last byte of the response body.
-- **upstream.request.time** variable represents time between establishing a connection to an upstream server and receiving the last byte of the response body.
-- **pipelined** variable has “p” if request was pipelined, “.” otherwise.
+- **http.request.upstream.time** variable represents time between establishing a connection to an upstream server and receiving the last byte of the response body.
+- **http.request.pipelined** variable has “p” if request was pipelined, “.” otherwise.
 
 Please note that you can name these new variables as you would like. For example instead of **http.request.time** it could be named as **requesttime**.
 
