@@ -63,3 +63,21 @@ Please not that once you updated `pipeline.yml` file you will need to make Fileb
 
 1. You can run `filebeat setup` command which will make sure everything is up-to-date in Elastic Search.
 2. You can remove index manually from Elastic Search  by running `DELETE _ingest/pipeline/filebeat-*-nginx*` command. Then start Filebeat - it will setup everything during start-up procedure.
+
+### Backward compatibility
+If you happen to have old log files you'd like to be able to process, then you would specify two patterns:
+1. One with performance metrics to match the `timed_combined` format.
+2. Another without performance metrics to match the default format.
+
+```
+patterns:
+    - (%{NGINX_HOST} )?"?(?:%{NGINX_ADDRESS_LIST:nginx.access.remote_ip_list}|%{NOTSPACE:source.address})
+      - (-|%{DATA:user.name}) \[%{HTTPDATE:nginx.access.time}\] "%{DATA:nginx.access.info}"
+      %{NUMBER:http.response.status_code:long} %{NUMBER:http.response.body.bytes:long}
+      "(-|%{DATA:http.request.referrer})" "(-|%{DATA:user_agent.original})"
+      %{NUMBER:http.request.time:double} (-|%{NUMBER:http.request.upstream.time:double}) %{DATA:http.request.pipelined}
+    - (%{NGINX_HOST} )?"?(?:%{NGINX_ADDRESS_LIST:nginx.access.remote_ip_list}|%{NOTSPACE:source.address})
+      - (-|%{DATA:user.name}) \[%{HTTPDATE:nginx.access.time}\] "%{DATA:nginx.access.info}"
+      %{NUMBER:http.response.status_code:long} %{NUMBER:http.response.body.bytes:long}
+      "(-|%{DATA:http.request.referrer})" "(-|%{DATA:user_agent.original})"
+```
