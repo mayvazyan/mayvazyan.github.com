@@ -18,11 +18,10 @@ More generic example might be `google abc` command to search `abc` on the eb. It
 I needed a similar workflow for Ubuntu and here's my solution.
 
 
-1. I installed [**gRun**](https://launchpad.net/ubuntu/+source/grun/0.9.3-2) the program that allows to launch programs and scripts
-`apt install grun`
-2. I configured a `Alt+Q` hotkey for it under **Settings -> Keyboard Shortcuts**.
-3. Then I created `.grun` folder in my home directory `mkdir ~/.grun`
-4. In that folder I created the `~/.gurn/grun-enable` script that will allo me to configure new urls I'd like to use:
+1. I installed [**gRun**](https://launchpad.net/ubuntu/+source/grun/0.9.3-2) the program that allows to launch programs and scripts using the `apt install grun` command.
+2. I configured the `Alt+Q` hotkey for **gRun** under **Settings -> Keyboard Shortcuts**. (by default **SlickRun** is using that one)
+3. Then I created `.grun` folder in my home directory using the `mkdir ~/.grun` command.
+4. In that folder I created the `~/.gurn/grun-enable` script that will allow to configure new URLs:
 ```
 echo "xdg-open $1" > ~/.grun/$2
 chmod +x ~/.grun/$2
@@ -33,5 +32,9 @@ if [ -d "$HOME/.grun/" ] ; then
     PATH="$HOME/.grun/:$PATH"
 fi
 ```
-6. That's it! We can configure google search using the following command `grun-enable https://www.google.com/search?q=\$1 google`.
-Then we can run `google abc` command in **gRun** and in terminal.
+6. That's it!
+
+Now we can configure google search using the following command:
+`grun-enable https://www.google.com/search?q=\$1 google`.
+
+And use it by typing `google abc` in **gRun** or in terminal.
