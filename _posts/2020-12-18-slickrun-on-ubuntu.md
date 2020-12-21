@@ -4,7 +4,7 @@ title: SlickRun on Ubuntu
 date: 2020-12-18 12:33
 author: ayvazyan
 comments: true
-categories: [usability]
+categories: [Ubuntu]
 ---
 
 
