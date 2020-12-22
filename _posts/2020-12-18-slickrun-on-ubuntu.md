@@ -11,6 +11,7 @@ categories: [Productivity, Ubuntu, Tools]
 *\* I'm using Ubuntu 20.04 as my main operating system for some time now. 
 So I'd like to document some tips in my blog.*
 
+
 I've been using [SlickRun](https://bayden.com/slickrun/) on Windows for years. It's just great. I can launch any program or website. For example to open work item #123, I just type `wi 123` and it will create a correct URL for me and open that work item in my browser.
 
 The more generic example might be `google abc` command to search `abc` on the eb. It does so by adding `abc` to the url, so it's something like `https://www.google.com/search?q=abc`.
