@@ -1373,10 +1373,18 @@ nav {
 	margin: 0;
 	list-style-type: none; }
 
+
+.navigation-wrapper {
+	flex-flow: column;
+	align-items: center;
+	display: flex;
+}
 .navigation__item {
 	display: inline-block;
 	margin: 0 2px 0 0;
-	line-height: 1em; }
+	line-height: 1em; 
+	&.link { width: 100px; }
+}
 	.navigation__item a {
 		display: block;
 		position: relative;
@@ -1388,8 +1396,6 @@ nav {
 			border-color: #FFF;
 			opacity: 1; }
 
-.navigation--social {
-	margin-left: 1.5em; }
 	.navigation--social a {
 		padding: 6px 8px 6px 9px; }
 		.navigation--social a .label {
@@ -1634,7 +1640,7 @@ input[type="tel"] {
 		background: rgba(51, 51, 51, 0.98);
 		border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
 		.navigation-wrapper.visible {
-			display: block; }
+			display: flex; }
 
 	.cover-navigation {
 		display: block;
