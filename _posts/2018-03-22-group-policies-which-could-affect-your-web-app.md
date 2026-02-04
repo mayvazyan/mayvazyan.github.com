@@ -12,6 +12,8 @@ We are working on a web application which heavily depends on the following brows
 - *Indexed DB* - it allows websites to store data in the browser cache, so that all needed data will be available offline.
 - *Web Storage* - it allows websites to store settings in the browser cache.
 
+<!--more-->
+
 ### Group Policy
 
 It's common for Enterprises to adjust default *IE 11* settings using Group Policies.

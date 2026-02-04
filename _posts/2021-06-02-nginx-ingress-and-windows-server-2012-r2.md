@@ -14,7 +14,9 @@ Recently I needed to enable APM for another `.NET 5` project running on **Window
 System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
  ---> System.Security.Authentication.AuthenticationException: Authentication failed because the remote party sent a TLS alert: 'HandshakeFailure'.
  ---> System.ComponentModel.Win32Exception (0x80090326): The message received was unexpected or badly formatted.
- ```
+```
+
+<!--more-->
 
 Thanks to [Qualys SSL Labs](https://www.ssllabs.com/ssltest/index.html) I was able to quickly find out that our **nginx-ingress** is using **TLS 1.2** and **TLS 1.3** only, with a [secure set of TLS ciphers](https://kubernetes.github.io/ingress-nginx/user-guide/tls/#default-tls-version-and-ciphers).
 

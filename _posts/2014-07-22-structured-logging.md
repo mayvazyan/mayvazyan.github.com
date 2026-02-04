@@ -6,9 +6,13 @@ author: ayvazyan
 comments: true
 categories: [.NET, I recommend]
 ---
-<span style="line-height: 1.714285714; font-size: 1rem;">On weekends I was reading latest <a href="http://assets.thoughtworks.com/assets/technology-radar-july-2014-en.pdf">Technology Radar from Thought Works</a></span><span style="line-height: 1.714285714; font-size: 1rem;">.</span>
 
-It’s really interesting! Some of things they mentioned we are already using here at Compellotech (such as HAL, Angular JS, Nancy, TypeScript, etc.) Others are good not know about, for example Structured Logging.
+On weekends, I was reading latest <a href="http://assets.thoughtworks.com/assets/technology-radar-july-2014-en.pdf">Technology Radar from Thought Works</a>
+
+It’s fascinating! Some of the things they mentioned we are already using here at Compellotech (such as HAL, Angular JS, Nancy, TypeScript, etc.) 
+Others are good not know about, for example **Structured Logging**.
+
+<!--more-->
 
 <i>Structured Logging</i>
 

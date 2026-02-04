@@ -17,8 +17,8 @@ I've been using [SlickRun](https://bayden.com/slickrun/) on Windows for years. I
 The more generic example might be `google abc` command to search `abc` on the eb. It does so by adding `abc` to the url, so it's something like `https://www.google.com/search?q=abc`.
 
 I needed a similar workflow for Ubuntu and here's my solution.
-
-# Configure gRun as SlickRun
+<!--more-->
+## Configure gRun as SlickRun
 
 1. I installed [**gRun**](https://launchpad.net/ubuntu/+source/grun/0.9.3-2) the program that allows to launch programs and scripts using the `apt install grun` command.
 2. I configured the `Alt+Q` hotkey for **gRun** under **Settings -> Keyboard Shortcuts**. (by default **SlickRun** is using that one)
@@ -41,13 +41,13 @@ Now we can configure google search using the following command:
 
 And use it by typing `google abc` in **gRun** or in terminal.
 
-# VPN
+## VPN
 Would like to connect to VPN via **gRun** or terminal? We've got you covered. Just put `nmcli con up id CONNECTION_NAME_HERE` into `~/.grun/vpn` and then mark it as executable via `chmod +x ~/.grun/vpn`. 
 Or you can do that with one liner:
 
 `echo "nmcli con up id CONNECTION_NAME_HERE" > ~/.grun/vpn && chmod +x ~/.grun/vpn`
 
-# What's next?
+## What's next?
 So we've got an easy way to run virtually anything with `Alt+Q` (or any other you used to). 
 For me that makes a real difference, now I feel at home :)
 

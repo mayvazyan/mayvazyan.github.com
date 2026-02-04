@@ -8,7 +8,7 @@ categories: [devops]
 ---
 
 Recently we needed to enable Response Time monitoring on NGINX server. Let me try to summarise steps needed to bring response times from NGINX into [Elastic Search](https://www.elastic.co/).
-
+<!--more-->
 ## NGINX Configuration
 In order to do so we had to define a new log format. That topic is covered in much detail at [lincolnloop.com](https://lincolnloop.com/blog/tracking-application-response-time-nginx/) back in Nov 09, 2010!
 

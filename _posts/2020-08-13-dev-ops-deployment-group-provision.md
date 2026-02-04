@@ -10,7 +10,7 @@ We are a long time users of Team Foundation Server (TFS). As you may know recent
 I absolutely love the new "Dev Ops" version (we are running v. 17.M153.5 by the way).
 
 But we faced two issues with it, so I'd like to document these here.
-
+<!--more-->
 **1. Build Agent registration**
 
 If you need to register Build Agent, you have to include Project Collection Name into the url. 

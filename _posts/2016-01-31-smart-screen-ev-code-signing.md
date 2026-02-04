@@ -9,6 +9,8 @@ categories: [.NET, Uncategorized]
 Recently our QA team started to get "<strong>Windows protected your PC</strong>" messages from the Windows SmartScreen. They saw that message each time they launch the app I'm working on at the moment.
 That warning message even didn't display the Publisher correctly. 
 
+<!--more-->
+
 We were able to make Smart Screen to show Publisher correctly by signing our application by the SHA-256 code signing certificate (we used SHA-1 originally). 
 
 As for the warning message itself, we had to buy <strong>Extended Validation Code Signing Certificate</strong> to get rid of it.

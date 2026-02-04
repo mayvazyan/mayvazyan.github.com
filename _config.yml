@@ -2,14 +2,13 @@
 title: Michael Ayvazyan
 description: 'Software Development in a Nutshell'
 url: 'http://ayvazyan.net'
-baseurl: '/'
+baseurl: ''
 google_analytics: 'UA-74010101-1'
 # disqus_shortname: 'your-disqus-name'
+# disable_landing_page: true
 
 author:
   name: 'Michael Ayvazyan'
-  twitter_username: ayvazyannet
-  facebook_username: sologut
   github_username:  mayvazyan
   linkedin_username:  michaelayvazyan
 
@@ -29,11 +28,15 @@ permalink: /:year/:month/:title/
 markdown: kramdown
 highlighter: rouge
 
+sass:
+    sass_dir: _sass
+    style: compressed
+
 kramdown:
   # use Github Flavored Markdown
   input: GFM
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate']
+plugins: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
